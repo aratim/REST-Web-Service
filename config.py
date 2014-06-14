@@ -1,13 +1,13 @@
 # Server Specific Configurations
 server = {
-    'port': '8080',
+    'port': '9000',
     'host': '0.0.0.0'
 }
 
 # Pecan Application Configurations
 app = {
-    'root': 'restwebservice.controllers.root.RootController',
-    'modules': ['restwebservice'],
+    'root': 'restwebservice.api.controllers.v1.root.RootController',
+    'modules': ['restwebservice.api'],
     'static_root': '%(confdir)s/public',
     'template_path': '%(confdir)s/restwebservice/templates',
     'debug': True,

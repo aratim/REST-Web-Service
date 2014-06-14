@@ -1,9 +1,11 @@
 from pecan import expose, redirect
 from webob.exc import status_map
-
+from restwebservice.api.controllers.v1 import fibonacci
 
 class RootController(object):
 
+    fibo = fibonacci.FibonacciController()
+    
     @expose(generic=True, template='index.html')
     def index(self):
         return dict()
