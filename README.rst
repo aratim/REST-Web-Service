@@ -6,7 +6,7 @@ The input should be a positive number and upper boundary on the input is 10000.
 
 Steps to setup the system on Ubuntu server
 -------------------------------------------
-Create a basic ubuntu 12.04 cloud server with 2 GB RAM.
+Create a basic Ubuntu 12.04 cloud server with 2 GB RAM.
 
 Login to the server and run the following commands:
 
