@@ -3,7 +3,7 @@ REST-Web-Service
 
 Setup (Ubuntu)
 ---------------
-apt-get update 
+apt-get update
 apt-get install git
 apt-get install python-pip
 pip install pecan
