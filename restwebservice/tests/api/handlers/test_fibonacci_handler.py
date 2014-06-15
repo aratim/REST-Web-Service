@@ -1,5 +1,6 @@
-from restwebservice.api.handlers import fibonacci_handler
 import unittest
+from restwebservice.api.handlers import fibonacci_handler
+
 
 class TestFibonacciHandler(unittest.TestCase):
 

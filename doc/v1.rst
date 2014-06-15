@@ -1,0 +1,38 @@
+v1 package
+==========
+
+Submodules
+----------
+
+v1.fibonacci module
+-------------------
+
+.. automodule:: v1.fibonacci
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+v1.helper module
+----------------
+
+.. automodule:: v1.helper
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+v1.root module
+--------------
+
+.. automodule:: v1.root
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: v1
+    :members:
+    :undoc-members:
+    :show-inheritance:

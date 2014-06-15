@@ -1,18 +1,15 @@
-from pecan import expose, redirect
+from pecan import expose, request
 from webob.exc import status_map
 from restwebservice.api.controllers.v1 import fibonacci
 
 class RootController(object):
 
-    fibo = fibonacci.FibonacciController()
+    fibonacci = fibonacci.FibonacciController()
     
-    @expose(generic=True, template='index.html')
+    @expose('json')
     def index(self):
-        return dict()
-
-    @index.when(method='POST')
-    def index_post(self, q):
-        redirect('http://pecan.readthedocs.org/en/latest/search.html?q=%s' % q)
+        msg = "Welcome to REST Web service"
+        return msg
 
     @expose('error.html')
     def error(self, status):

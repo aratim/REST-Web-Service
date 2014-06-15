@@ -1,17 +1,25 @@
 
+
 class FibonacciHandler(object):
+    """ Handler class for fibonacci series web service."""
+
+    fib_table = {}
+    fib_table[0] = 0
+    fib_table[1] = 1
 
     def get_fibonacci_series(self, num):
-        result = []
+        """ Generates the fibonacci series of a given length."""
 
+        result = []
         for i in range(num):
             result.append(self._fibo(i))
         return result
-            
+
     def _fibo(self, num):
-        if num==0:
-            return 0
-        elif num==1:
-            return 1
+        """ Recursive function which uses dynamic programming"""
+
+        if num in self.fib_table:
+            return self.fib_table[num]
         else:
-            return self._fibo(num-2) + self._fibo(num-1)
+            self.fib_table[num] = self._fibo(num-1) + self._fibo(num-2)
+            return self.fib_table[num]
