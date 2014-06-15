@@ -6,20 +6,27 @@ The input should be a positive number and upper boundary on the input is 10000.
 
 Steps to setup the system on Ubuntu server
 -------------------------------------------
-Create a basic ubuntu 12.04 cloud server with 2 GB RAM
+Create a basic ubuntu 12.04 cloud server with 2 GB RAM.
 
 Login to the server and run the following commands:
+
 apt-get update
+
 apt-get install git
+
 apt-get install python-pip
+
 pip install pecan
+
 pip install nose
+
 git clone https://github.com/aratim/REST-Web-Service.git
 
 
 Steps to build the web service 
 ------------------------------
 cd REST-Web-Service/
+
 python setup.py develop
 
 
