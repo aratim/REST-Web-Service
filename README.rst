@@ -16,6 +16,8 @@ apt-get install git
 
 apt-get install python-pip
 
+apt-get install curl
+
 pip install pecan
 
 pip install nose
