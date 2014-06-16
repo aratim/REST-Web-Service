@@ -1,16 +1,8 @@
-import logging
 from pecan import expose
 from pecan import rest
-import sys
 
 from restwebservice.api.handlers import fibonacci_handler
 from restwebservice.api.controllers.v1 import helper
-
-
-h1 = logging.StreamHandler(sys.stderr)
-h1.setLevel(logging.INFO)
-rootLogger = logging.getLogger("FibonacciController")
-rootLogger.addHandler(h1)
 
 
 class FibonacciController(rest.RestController):
@@ -31,7 +23,7 @@ class FibonacciController(rest.RestController):
             result = handler.get_fibonacci_series(n)
             status = 200
             json = json_helper.jsonify_response(status, "Fibonacci Series", result)
-            rootLogger.info("Great")
+            
         else:
             error = 'Number should be in the range %s-%s' %(self.MIN_NUM, self.MAX_NUM)
             status = 422

@@ -5,11 +5,7 @@ from restwebservice.api.controllers.v1 import fibonacci
 from restwebservice.api.handlers import fibonacci_handler
 
 
-
 class TestFibonacciController(unittest.TestCase):
-
-    def setUp(self):
-        pass
 
     def test_fibonacci_get(self):
         controller = fibonacci.FibonacciController()
