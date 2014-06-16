@@ -20,6 +20,8 @@ pip install pecan
 
 pip install nose
 
+pip install mock
+
 git clone https://github.com/aratim/REST-Web-Service.git
 
 
