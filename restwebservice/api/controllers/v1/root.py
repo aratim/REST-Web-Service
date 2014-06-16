@@ -1,4 +1,4 @@
-from pecan import expose, request
+from pecan import expose
 from webob.exc import status_map
 from restwebservice.api.controllers.v1 import fibonacci
 
